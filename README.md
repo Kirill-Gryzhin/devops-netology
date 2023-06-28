@@ -4,24 +4,35 @@
 #в будующем будут проигнорированы файлы в папке terraform и субкаталогах
 
 #будут проигнорированы файлы с расширением 
-	.tfstat
+
+ 	.tfstat
 #Также файлы содержащие в название 
-	.tfstate.
+	
+ 	.tfstate.
 #будут исключены файлы логов начинающиеся 
-	carsh.*.log 
+	
+ 	carsh.*.log 
 #Будет исключен файл 
-	crash.log
+	
+ 	crash.log
 #Будут исключены файлы с расширением 
-	.tfvars 
+	
+ 	.tfvars 
 #Также фйлы содержащие в конце названия 
-	tfvars.json
+	
+ 	tfvars.json
 #Будут проигнорированы файлы 
-	override.tf, override.tf.json 
+	
+ 	override.tf, override.tf.json 
 #Также все файлы заканчивающиеся на 
-	_override.tf и _override.tf.json
+	
+ 	_override.tf и _override.tf.json
 #Будут проигнорированы файлы конфигураций консоли оканчивающиеся на 
-	.terraformc 
+	
+ 	.terraformc 
 #Будет проигнорирован файл 
-	terraform.rc
+	
+ 	terraform.rc
 #Создана новая ветка
-	FIX
+	
+ 	FIX
