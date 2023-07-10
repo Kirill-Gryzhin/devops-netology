@@ -60,10 +60,13 @@ Error: The requested URL returned error: 404:
 1. Скачайте с [сайта](https://app.vagrantup.com/bento/boxes/ubuntu-20.04) файл-образ "bento/ubuntu-20.04".
 2. Добавьте его в список образов Vagrant: "vagrant box add bento/ubuntu-20.04 <путь к файлу>".
 
+   *Приложите скриншоты в качестве решения на эту задачу.*
+
 # Ответ 4
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/2b5d88f5-165a-4026-8d87-ac2ab3b74dc8)
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/72d891b9-cc9b-447f-b3d2-71e9609c539c)
 
-https://github.com/netology-code/virt-video-code/tree/main/ansible
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/3994be26-89df-4b15-89fe-b2f03c712af1)
+
