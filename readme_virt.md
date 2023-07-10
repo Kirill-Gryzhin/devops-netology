@@ -37,6 +37,7 @@
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/6a82efc0-e421-4376-b34f-071444ad6939)
 
+https://github.com/netology-code/virt-video-code/blob/main/vagrant/Vagrantfile
 # Задание 4
 
 Воспроизведите практическую часть лекции самостоятельно.
