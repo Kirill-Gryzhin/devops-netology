@@ -66,3 +66,4 @@ Error: The requested URL returned error: 404:
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/72d891b9-cc9b-447f-b3d2-71e9609c539c)
 
+https://github.com/netology-code/virt-video-code/tree/main/ansible
