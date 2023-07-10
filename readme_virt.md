@@ -21,3 +21,44 @@
 
 1. Ansible выгодно отличается тем, что не нужно устанавливать агент на целевые машины, умеет конфигурировать linux, bsd и Windows системы.
 2. Кажется, что push метод надежней, так как изменение конфигурации гаранитрованно отобразятся в репозитории.
+
+# Задание 3 
+
+Установите на личный компьютер:
+
+- [VirtualBox](https://www.virtualbox.org/),
+- [Vagrant](https://github.com/netology-code/devops-materials),
+- [Terraform](https://github.com/netology-code/devops-materials/blob/master/README.md),
+- Ansible.
+
+*Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.*
+
+# Ответ 3
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/6a82efc0-e421-4376-b34f-071444ad6939)
+
+# Задание 4
+
+Воспроизведите практическую часть лекции самостоятельно.
+
+- Создайте виртуальную машину.
+- Зайдите внутрь ВМ, убедитесь, что Docker установлен с помощью команды
+```
+docker ps,
+```
+Vagrantfile из лекции и код ansible находятся в [папке](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
+
+Примечание. Если Vagrant выдаёт ошибку:
+```
+URL: ["https://vagrantcloud.com/bento/ubuntu-20.04"]     
+Error: The requested URL returned error: 404:
+```
+
+выполните следующие действия:
+
+1. Скачайте с [сайта](https://app.vagrantup.com/bento/boxes/ubuntu-20.04) файл-образ "bento/ubuntu-20.04".
+2. Добавьте его в список образов Vagrant: "vagrant box add bento/ubuntu-20.04 <путь к файлу>".
+
+# Ответ 4
+
+wget https://app.vagrantup.com/bento/boxes/ubuntu-20.04/versions/202303.13.0/providers/virtualbox.box
