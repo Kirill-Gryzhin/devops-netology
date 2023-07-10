@@ -37,7 +37,7 @@
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/6a82efc0-e421-4376-b34f-071444ad6939)
 
-https://github.com/netology-code/virt-video-code/blob/main/vagrant/Vagrantfile
+
 # Задание 4
 
 Воспроизведите практическую часть лекции самостоятельно.
@@ -62,4 +62,7 @@ Error: The requested URL returned error: 404:
 
 # Ответ 4
 
-wget https://app.vagrantup.com/bento/boxes/ubuntu-20.04/versions/202303.13.0/providers/virtualbox.box
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/2b5d88f5-165a-4026-8d87-ac2ab3b74dc8)
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/72d891b9-cc9b-447f-b3d2-71e9609c539c)
+
