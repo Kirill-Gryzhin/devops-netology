@@ -20,3 +20,7 @@ Hey, Netology
 ```
 
 Опубликуйте созданный fork в своём репозитории и предоставьте ответ в виде ссылки на https://hub.docker.com/username_repo.
+
+# Ответ 1
+
+https://hub.docker.com/r/gryzhinka/nginx
