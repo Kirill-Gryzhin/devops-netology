@@ -162,3 +162,48 @@ root@020a35b2adf7:/data# ls -lh
 total 8.0K
 -rw-r--r-- 1 root root 5 Jul 12 10:16 test.md
 -rw-rw-r-- 1 1000 1000 6 Jul 12 10:20 test2.md
+
+```
+
+# Задача 4 (*)
+
+Воспроизведите практическую часть лекции самостоятельно.
+
+Соберите Docker-образ с Ansible, загрузите на Docker Hub и пришлите ссылку вместе с остальными ответами к задачам.
+
+# Ответ 4 
+
+https://hub.docker.com/r/gryzhinka/ansible
+
+- В моем случае пришлось изменить Dockerfile  к следующему виду:
+
+```
+
+FROM alpine:3.14
+RUN  CARGO_NET_GIT_FETCH_WITH_CLI=1 && \
+     apk  --no-cache add && \
+     apk add python3 py3-pip openssl ca-certificates sshpass openssh-client rsync git && \
+     apk  --no-cache add && \
+     apk add  --virtual build-dependencies python3-dev libffi-dev musl-dev gcc cargo openssl-dev &&\
+     apk add   libressl-dev &&\
+     apk add   build-base && \
+     pip install --upgrade pip wheel && \
+     pip install --upgrade cryptography cffi && \
+     pip install ansible==2.9.24 && \
+     pip install mitogen ansible-lint jmespath --ignore-installed && \
+     pip install --upgrade pywinrm && \
+     apk del build-dependencies && \
+     rm -rf /var/cache/apk/* && \
+     rm -rf /root/.cache/pip && \
+     rm -rf /root/.cargo
+
+RUN  mkdir /ansible && \
+     mkdir -p /etc/ansible && \
+     echo 'localhost' > /etc/ansible/hosts
+
+WORKDIR /ansible
+COPY ansible.cfg /ansible/
+
+CMD  [ "ansible-playbook", "--version" ]
+
+```
