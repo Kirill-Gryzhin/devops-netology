@@ -22,6 +22,7 @@
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/025ee84b-57e9-4d1e-a0c8-092fe61c2782)
 
 **2.2**
+```
 ydoolb@ydoolb-Vostro-5490:~$ terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -109,6 +110,12 @@ yandex_compute_instance.node01: Still creating... [50s elapsed]
 yandex_compute_instance.node01: Creation complete after 56s [id=fhm9okadrebs64f2sfbi]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+external_ip_address_node01_yandex_cloud = "130.193.51.107"
+internal_ip_address_node01_yandex_cloud = "10.77.1.25"
+```
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/b8a69704-3d6c-4564-a33d-badba483be0f)
 
