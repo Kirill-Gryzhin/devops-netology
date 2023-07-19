@@ -113,11 +113,12 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-external_ip_address_node01_yandex_cloud = "158.160.34.177"
-internal_ip_address_node01_yandex_cloud = "10.77.1.18"
+external_ip_address_node01_yandex_cloud = "84.252.131.207"
+internal_ip_address_node01_yandex_cloud = "10.77.1.23"
 ```
 
-![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/ae8e6420-a6bd-44eb-87ea-6e32431636eb)
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/1f9de62d-0cc9-474f-b74d-1759375e3da0)
+
 
 
 # Задача 3
@@ -152,9 +153,8 @@ cd26290ae4b4   stefanprodan/caddy                 "/sbin/tini -- caddy…"   2 m
 Чтобы получить зачёт, предоставьте: 
 
 - скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере ниже.
-<p align="center">
-  <img width="1200" height="600" src="./assets/yc_02.png">
-</p>
+
 
 # Ответ 4
 
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/36eb7e80-fbf5-4702-a669-9cc3945cedbf)
