@@ -117,7 +117,8 @@ external_ip_address_node01_yandex_cloud = "130.193.51.107"
 internal_ip_address_node01_yandex_cloud = "10.77.1.25"
 ```
 
-![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/b8a69704-3d6c-4564-a33d-badba483be0f)
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/ae8e6420-a6bd-44eb-87ea-6e32431636eb)
+
 
 # Задача 3
 
