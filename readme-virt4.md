@@ -113,8 +113,8 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-external_ip_address_node01_yandex_cloud = "130.193.51.107"
-internal_ip_address_node01_yandex_cloud = "10.77.1.25"
+external_ip_address_node01_yandex_cloud = "158.160.34.177"
+internal_ip_address_node01_yandex_cloud = "10.77.1.18"
 ```
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/ae8e6420-a6bd-44eb-87ea-6e32431636eb)
