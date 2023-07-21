@@ -46,3 +46,26 @@ docker service ls
 # Ответ 3
 
 ```
+[centos@node01 ~]$ sudo docker service ls
+ID             NAME                                MODE         REPLICAS   IMAGE                                          PORTS
+25j5h1n3hzja   swarm_monitoring_alertmanager       replicated   1/1        stefanprodan/swarmprom-alertmanager:v0.14.0    
+vstfafoxeml9   swarm_monitoring_caddy              replicated   1/1        stefanprodan/caddy:latest                      *:3000->3000/tcp, *:9090->9090/tcp, *:9093-9094->9093-9094/tcp
+za76sttyje9l   swarm_monitoring_cadvisor           global       6/6        google/cadvisor:latest                         
+b5m1fo1jko1b   swarm_monitoring_dockerd-exporter   global       6/6        stefanprodan/caddy:latest                      
+wd8cb4etfwjj   swarm_monitoring_grafana            replicated   1/1        stefanprodan/swarmprom-grafana:5.3.4           
+fs00j898nlef   swarm_monitoring_node-exporter      global       6/6        stefanprodan/swarmprom-node-exporter:v0.16.0   
+n0zuhe0ysnxo   swarm_monitoring_prometheus         replicated   1/1        stefanprodan/swarmprom-prometheus:v2.5.0       
+5evah2loxvh3   swarm_monitoring_unsee              replicated   1/1        cloudflare/unsee:v0.8.0         
+```
+
+# Задача 4 (*)
+
+Выполните на лидере Docker Swarm-кластера команду, указанную ниже, и дайте письменное описание её функционала — что она делает и зачем нужна:
+```
+# см.документацию: https://docs.docker.com/engine/swarm/swarm_manager_locking/
+docker swarm update --autolock=true
+```
+
+# Ответ 4
+
+Данная команда выводит ключ роя на экран.Auto lock защищает рой от злоумышленников, в случае перезагрузки роя он не запустится до тех пор, пока не указать данный ключ. Ключ неолбходимо хранить в зашифрованом хранилище, что бы избежать возможных проблем.
