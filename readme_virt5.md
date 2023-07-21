@@ -22,3 +22,27 @@ docker node ls
 ```
 
 # Ответ 2
+
+```
+sudo docker node ls
+ID                            HOSTNAME             STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+698kh2l5be9hlxq2vetqyhz32 *   node01.netology.yc   Ready     Active         Leader           24.0.4
+yc1ck2i0zozy6qsqkpnbxi827     node02.netology.yc   Ready     Active         Reachable        24.0.4
+w5ozpsxebcvvf2xs5bnz37zwt     node03.netology.yc   Ready     Active         Reachable        24.0.4
+z9cwqbiio8n0ejnp2uu84g51n     node04.netology.yc   Ready     Active                          24.0.4
+5gyp586s41kq3l3goxrlzvweh     node05.netology.yc   Ready     Active                          24.0.4
+uznxmty7fmbuq1loil9bm5bso     node06.netology.yc   Ready     Active                          24.0.4
+```
+
+# Задача 3
+
+Создайте ваш первый, готовый к боевой эксплуатации кластер мониторинга, состоящий из стека микросервисов.
+
+Чтобы получить зачёт, предоставьте скриншот из терминала (консоли), с выводом команды:
+```
+docker service ls
+```
+
+# Ответ 3
+
+```
