@@ -26,15 +26,15 @@
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/ca28691a-808a-43dc-92fe-9c487f4e2b07)
  
- Осталась по прежнему закомментирована часть кода с указанием названия  Docker image nginx:latest
+- Осталась по прежнему закомментирована часть кода с указанием названия  Docker image nginx:latest
 
  
-random_string_FAKE не прописан в корневом модуле, у нас прописан random_string, а также ошибка синтаксиса resulT, а должно быть result
+- random_string_FAKE не прописан в корневом модуле, у нас прописан random_string, а также ошибка синтаксиса resulT, а должно быть result
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/4f7455e1-2ee0-457d-a5d1-50dbaa40299a)
 
-не прописано имя для Docker_image
+- не прописано имя для Docker_image
 
-после исправления результат:
+- после исправления результат:
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/647022d0-1b33-48d6-8b47-e5d987e17f55)
