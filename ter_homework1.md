@@ -13,3 +13,13 @@
 
 #  Ответ 1
 
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/067d8f31-3641-4103-993b-563a9f1d2d16)
+
+
+1. ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/432ea2d7-c230-4cf9-a347-20c4ca936a53)
+
+2. Секретная личная информация должна хранится в файле personal.auto.tfvars
+
+3. "result": "8KVD07LFwoGI10lw",
+
+4. 
