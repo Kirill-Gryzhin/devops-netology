@@ -38,3 +38,53 @@
 - после исправления результат:
 
 ![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/647022d0-1b33-48d6-8b47-e5d987e17f55)
+
+# Задание 2*
+
+1. Изучите в документации provider [**Virtualbox**](https://docs.comcloud.xyz/providers/shekeriev/virtualbox/latest/docs) от 
+shekeriev.
+2. Создайте с его помощью любую виртуальную машину. Чтобы не использовать VPN советуем выбрать любой образ с расположением в github из [**списка**](https://www.vagrantbox.es/)
+
+В качестве ответа приложите plan для создаваемого ресурса и скриншот созданного в VB ресурса. 
+
+#  Ответ 2
+
+``` 
+ydoolb@ydoolb-Vostro-5490:~/Shekeriev$ terraform plan
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # virtualbox_vm.vm1 will be created
+  + resource "virtualbox_vm" "vm1" {
+      + cpus   = 1
+      + id     = (known after apply)
+      + image  = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box"
+      + memory = "512 mib"
+      + name   = "Centos-7"
+      + status = "running"
+
+      + network_adapter {
+          + device                 = "IntelPro1000MTDesktop"
+          + host_interface         = "vboxnet1"
+          + ipv4_address           = (known after apply)
+          + ipv4_address_available = (known after apply)
+          + mac_address            = (known after apply)
+          + status                 = (known after apply)
+          + type                   = "hostonly"
+        }
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + IPAddress = (known after apply)
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+```
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/c8bf458b-3784-4174-b302-e5b5e8009771)
