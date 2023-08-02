@@ -43,3 +43,16 @@
 
 # Ответ 3
 
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/79428a8d-407a-4e97-8de0-df757af79ce5)
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/d4591a0b-3676-45a6-8d59-fe0218aaea20)
+
+# Задание 4
+
+1. Объявите в файле outputs.tf output типа map, содержащий { instance_name = external_ip } для каждой из ВМ.
+2. Примените изменения.
+
+В качестве решения приложите вывод значений ip-адресов команды ```terraform output```.
+
+# Ответ 4
+
