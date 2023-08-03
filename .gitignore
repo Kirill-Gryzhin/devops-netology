@@ -1,0 +1,11 @@
+# secret
+personal.auto.tfvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+
+# Local .terraform directories and files
+**/.terraform/*
+.terraform*
