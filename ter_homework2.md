@@ -56,3 +56,29 @@
 
 # Ответ 4
 
+```
+ydoolb@ydoolb-laptop:~/ter-homeworks/02/src$ terraform output
+external_ip-bd = "158.160.63.51"
+external_ip_web = "158.160.119.69"
+```
+
+# Задание 5
+
+1. В файле locals.tf опишите в **одном** local-блоке имя каждой ВМ, используйте интерполяцию ${..} с несколькими переменными по примеру из лекции.
+2. Замените переменные с именами ВМ из файла variables.tf на созданные вами local-переменные.
+3. Примените изменения.
+
+# Ответ 5
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/8e918ad2-bbd1-4a2d-9e32-e4332878dd41)
+
+# Задание 6
+
+1. Вместо использования трёх переменных  ".._cores",".._memory",".._core_fraction" в блоке  resources {...}, объедините их в переменные типа **map** с именами "vm_web_resources" и "vm_db_resources". В качестве продвинутой практики попробуйте создать одну map-переменную **vms_resources** и уже внутри неё конфиги обеих ВМ — вложенный map.
+2. Также поступите с блоком **metadata {serial-port-enable, ssh-keys}**, эта переменная должна быть общая для всех ваших ВМ.
+3. Найдите и удалите все более не используемые переменные проекта.
+4. Проверьте terraform plan. Изменений быть не должно.
+
+# Ответ 6
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/c2eb628f-1491-4879-9e7b-2bb7e3f11d70)
