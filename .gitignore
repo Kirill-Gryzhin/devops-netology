@@ -1,0 +1,8 @@
+# secret
+
+personal.auto.tfvars
+
+#state
+
+terraform.tfstate
+terraform.tfstate.backup
