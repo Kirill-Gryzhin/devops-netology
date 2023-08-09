@@ -30,12 +30,46 @@ variable "vpc_name" {
   default     = "develop"
   description = "VPC network&subnet name"
 }
+#for_each_res
+
+variable "vm_res"{
+type = list(object(
+    {
+    name        = string
+    platform_id  = string
+    cores        = number
+    memory        = number
+    core_fraction = number
+    type          = string
+    size        = number
+    }))
+      default = [
+    { 
+    name        = "main"
+    platform_id = "standard-v1"
+    cores        = 2
+    memory        = 2
+    core_fraction = 5
+    type          = "network-hdd"
+    size        = 7
+    },
+    {
+     name       = "replica"
+    platform_id = "standard-v1"
+    cores        = 2
+    memory        = 1
+    core_fraction = 5
+    type          = "network-hdd"
+    size          = 5
+    }
+  ]
+}
+
 ###ssh vars
 
 variable "vms_ssh_root_key" {
 type = map
 default = {
 serial-port-enable = 1
-ssh-keys           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDVysZUNbeMo70kXyQksHdwM8mLYFNdwwI7WS0/Y//+j ydoolb@ydoolb-laptop"
 }
 }

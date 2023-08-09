@@ -28,13 +28,13 @@ resources {
 network_interface { 
     subnet_id = yandex_vpc_subnet.develop.id
     nat       = true
-
     security_group_ids = [yandex_vpc_security_group.example.id]
 }
  
  metadata = {
     serial-port-enable = var.vms_ssh_root_key.serial-port-enable
-    ssh-keys           = var.vms_ssh_root_key.ssh-keys
+    ssh-keys           = "ubuntu:${local.ssh-key}"
+    
   }
 
 }
