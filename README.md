@@ -69,7 +69,7 @@ network_interface {
 
 }
 ```
-2. 3. 4. 
+2, 3, 4. 
 ```
 data "yandex_compute_image" "ubuntu1" {
   family = var.vm_web_compute_image
@@ -108,3 +108,6 @@ network_interface {
   }
 }
 ```
+5.
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/9ba29f6b-29ae-4926-958b-42cb5b8fdf77)
+
