@@ -178,7 +178,8 @@ network_interface {
 ```
 
 5.
-![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/087f3414-9fbe-4c2f-9714-777f3ac26b5b)
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/b4b6af5c-8973-49f0-a9bc-8e8f66796918)
+
 
 # Задание 4
 
