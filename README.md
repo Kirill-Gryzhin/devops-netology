@@ -197,4 +197,5 @@ network_interface {
 
 # Ответ 4
 
-![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/206ca82a-25f1-436c-9ef0-365d34059c10)
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/cf21e360-fd8c-4221-8f4f-24e3dd6be3f8)
+
