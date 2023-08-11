@@ -1,3 +1,5 @@
 locals {
- ssh-key = file("~/key.pub")
+ ssh-key = file("/home/ydoolb/key.pub")
 }
+
+

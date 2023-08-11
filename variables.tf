@@ -65,11 +65,3 @@ type = list(object(
   ]
 }
 
-###ssh vars
-
-variable "vms_ssh_root_key" {
-type = map
-default = {
-serial-port-enable = 1
-}
-}
