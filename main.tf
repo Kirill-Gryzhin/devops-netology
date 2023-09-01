@@ -1,3 +1,18 @@
+terraform {
+  required_providers {
+    yandex = {
+      source = "yandex-cloud/yandex"
+    }
+  }
+  required_version = ">=0.13"
+}
+
+provider "yandex" {
+  token     = var.token
+  cloud_id  = var.cloud_id
+  folder_id = var.folder_id
+  zone      = var.default_zone
+}
 
 
 
@@ -15,6 +30,15 @@ resource "yandex_vpc_subnet" "develop" {
   v4_cidr_blocks = ["10.0.1.0/24"]
 }
 
+
+module "vpc_dev" {
+  source       = "./vpc"
+  vpc_name        = "net"
+  vpc_subnet_name     = "subnet"
+  zone = "ru-central1-a"
+  cidr = ["10.0.1.0/24"]
+}
+
 module "test-vm" {
   source          = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
   env_name        = "develop"
@@ -27,7 +51,7 @@ module "test-vm" {
   public_ip       = true
   
   metadata = {
-      user-data          = data.template_file.cloudinit.rendered #Для демонстрации №3
+      user-data          = data.template_file.cloudinit.rendered #Для демонстрации 3cd 
       serial-port-enable = 1
   }
 
