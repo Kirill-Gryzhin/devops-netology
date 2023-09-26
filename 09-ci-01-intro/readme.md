@@ -8,5 +8,9 @@
 6. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
 
 ### Решение
+Workflow для задачи Bug
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/ce31e8e5-b325-47f9-91ff-8b57f49a35aa)
 
-1.
+Workflow для всех остальных задач
+
+![image](https://github.com/Kirill-Gryzhin/devops-netology/assets/137723281/bd9006cc-9403-46e1-a9f9-2ea6e7fd54aa)
